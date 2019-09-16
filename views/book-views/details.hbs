@@ -1,0 +1,14 @@
+<h1>Welcome to the book details page</h1>
+<h2>{{book.title}}</h2>
+{{#if book.author}}
+  <h3>Author: {{book.author}}</h3>
+  {{else}}
+    <h3>Author: Unknown</h3>
+{{/if}}
+{{#if book.image}}
+  <img src="{{book.image}}">
+  {{else}}
+    <h3>No image available</h3>
+  {{/if}}
+
+<a href="/books/editbook/{{book.id}}">Edit Book</a>
